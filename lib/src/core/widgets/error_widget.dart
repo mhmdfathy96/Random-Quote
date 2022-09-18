@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../translations/locale_keys.g.dart';
 import '../../config/locale/app_localizations.dart';
 import '../utils/app_colors.dart';
-import '../utils/app_locale_keys.dart';
 
 class ErrorWidget extends StatelessWidget {
   final VoidCallback? onPressed;
@@ -19,14 +19,14 @@ class ErrorWidget extends StatelessWidget {
           Container(
             margin: const EdgeInsets.symmetric(vertical: 12),
             child: Text(
-              AppLocalizations.translate(AppLocaleKeys.somethingWentWrong),
+              AppLocalizations.translate(LocaleKeys.somethingWentWrong),
               style: Theme.of(context).textTheme.headline5,
             ),
           ),
           Container(
             margin: const EdgeInsets.only(bottom: 12),
             child: Text(
-              AppLocalizations.translate(AppLocaleKeys.tryAgain),
+              AppLocalizations.translate(LocaleKeys.tryAgain),
               style: Theme.of(context).textTheme.headline6,
             ),
           ),
@@ -37,7 +37,7 @@ class ErrorWidget extends StatelessWidget {
             )),
             onPressed: onPressed,
             child: Text(
-              AppLocalizations.translate(AppLocaleKeys.reloadScreen),
+              AppLocalizations.translate(LocaleKeys.reloadScreen),
             ),
           ),
         ],

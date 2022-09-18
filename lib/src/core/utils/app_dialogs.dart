@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import '../../../translations/locale_keys.g.dart';
 import '../../config/locale/app_localizations.dart';
-import 'app_locale_keys.dart';
 
 class AppDialogs {
   static Future showAlertDialog(
@@ -15,7 +15,7 @@ class AppDialogs {
                 ElevatedButton(
                   onPressed: () => Navigator.of(context).pop(),
                   child: Text(AppLocalizations
-                      .translate(AppLocaleKeys.ok)),
+                      .translate(LocaleKeys.ok)),
                 ),
               ],
             ));

@@ -6,7 +6,7 @@ class AppLocalizations {
   final BuildContext? context;
   AppLocalizations({this.context});
 
-  static String translate(String key) => key.tr();
+  static String translate(String key,{List<String>? args,Map<String,String>? namedArgs}) => key.tr(args: args,namedArgs:namedArgs,);
 
   bool isEnLocale() => context!.locale.languageCode == 'en';
 
